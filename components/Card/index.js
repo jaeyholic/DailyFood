@@ -39,9 +39,9 @@ const Card = ({ item, color }) => {
         <Text mb={{ md: 4 }}>
           <Icon as={Phone} boxSize={6} /> {item.phone}
         </Text>
-        <NextLink href={item.reserve_url} passHref>
-          <Link isExternal _hover={{ textDecor: 'none' }}>
-            <Button w='100%'>Reservation</Button>
+        <NextLink href={`/restaurant/${item.id}`} passHref>
+          <Link _hover={{ textDecor: 'none' }}>
+            <Button w='100%'>Click to see details</Button>
           </Link>
         </NextLink>
       </Box>
