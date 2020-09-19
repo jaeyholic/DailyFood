@@ -38,6 +38,10 @@ export default function Home() {
   }, [searchQuery]);
 
   React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
+  React.useEffect(() => {
     const id = setTimeout(() => {
       const fetchData = async () => {
         try {
